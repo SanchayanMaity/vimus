@@ -11,7 +11,8 @@ import           Data.Maybe
 import qualified Network.MPD as MPD hiding (withMPD)
 import           Network.MPD (Seconds, MonadMPD)
 
-import           Control.Monad.State.Strict (unless, lift, liftIO, forever, MonadIO)
+import           Control.Monad (unless, forever)
+import           Control.Monad.State.Strict (lift, liftIO, MonadIO)
 import           Data.Foldable (forM_)
 import           Data.List hiding (filter)
 import           Data.IORef

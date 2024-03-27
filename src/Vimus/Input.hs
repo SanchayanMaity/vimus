@@ -17,7 +17,7 @@ module Vimus.Input (
 ) where
 
 import           Prelude hiding (getChar)
-import           Control.Applicative
+import           Control.Monad
 import           Control.Monad.State.Strict
 import qualified Data.Char as Char
 import           Control.DeepSeq

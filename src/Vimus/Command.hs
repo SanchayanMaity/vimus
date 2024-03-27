@@ -34,7 +34,7 @@ import qualified Data.Map.Strict as Map
 import           Data.Time.Clock.POSIX
 
 import           Control.Monad.State.Strict (gets, liftIO)
-import           Control.Monad.Error (catchError)
+import           Control.Monad.Error.Class (catchError)
 
 import           Network.MPD ((=?))
 import qualified Network.MPD as MPD hiding (withMPD)
@@ -504,7 +504,7 @@ commands = [
       MPD.previous :: Vimus ()
 
   , command "toggle" "toggle between play and pause" $ do
-      MPDE.toggle :: Vimus ()
+      MPD.toggle :: Vimus ()
 
   , command "stop" "stop playback" $ do
       MPD.stop :: Vimus ()

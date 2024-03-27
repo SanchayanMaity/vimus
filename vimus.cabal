@@ -37,11 +37,11 @@ library
   ghc-options: -Wall
 
   build-depends:
-      base >= 4.7 && < 5
+      base >= 4.11 && < 5
     , bytestring
     , utf8-string
     , wcwidth
-    , libmpd >= 0.9.0.10 && < 0.10
+    , libmpd
     , mtl >= 2
     , containers >= 0.5 && < 0.7
     , deepseq
@@ -114,7 +114,7 @@ executable vimus
   main-is: Main.hs
   hs-source-dirs: driver
   build-depends:
-      base >= 4.7 && < 5
+      base >= 4.11 && < 5
     , vimus
 
 test-suite spec
@@ -124,7 +124,7 @@ test-suite spec
   main-is: Spec.hs
   hs-source-dirs: test
   build-depends:
-      base >= 4.7 && < 5
+      base >= 4.11 && < 5
     , vimus
     , data-default
     , wcwidth

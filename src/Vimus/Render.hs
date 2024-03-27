@@ -15,7 +15,7 @@ module Vimus.Render (
 , fitToColumn
 ) where
 
-import           Control.Applicative
+import           Control.Monad
 import           Control.Monad.Reader
 import           UI.Curses hiding (wgetch, ungetch, mvaddstr, err, mvwchgat, addstr, wcolor_set)
 import           Data.Char.WCWidth
